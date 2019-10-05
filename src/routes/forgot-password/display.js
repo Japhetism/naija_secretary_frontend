@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class LoginDisplay extends React.Component {
+export default class ForgotPasswordDisplay extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -43,7 +43,7 @@ export default class LoginDisplay extends React.Component {
                 <div class="hero-banner__img">
                     <form>
                         <div style={{borderRadius: '10px', backgroundColor: '#ffffff', paddingLeft: '20px', paddingRight: '20px', paddingBottom: '50px'}}> 
-                        <h2 style={{color: '#042A9B', textAlign: 'center', paddingTop: '10px'}}>Login</h2>
+                        <h2 style={{color: '#042A9B', textAlign: 'center', paddingTop: '10px'}}>Forgot Password</h2>
                         <div class="row row-field">
                            
                             <div class="col-md-12">
@@ -52,23 +52,14 @@ export default class LoginDisplay extends React.Component {
                             </div>
                         </div>
                         <div class="row row-field">
-                            <div class="col-md-12">
-                                <label>Password</label>
-                                <input type="password" class="form-control" />
+                            <div class="col-md-12" style={{textAlign: 'center'}}>
+                                <button class="btn btn-primary" style={{fontSize: '15px', backgroundColor: '#042A9B', borderColor: '#042A9B'}}>Reset my Password</button>
                             </div>
                         </div>
                         <div class="row row-field">
                           <div class="col-md-12">
-                            <a href="/forgot-password" style={{color: '#042A9B'}}>Forgot Password?</a>
+                            <a href="/login" style={{color: '#042A9B'}}>Back to Login</a>
                           </div>
-                        </div>
-                        <div class="row row-field">
-                            <div class="col-md-6">
-                            <button class="btn btn-primary" style={{width: '100px', fontSize: '15px', backgroundColor: '#042A9B', borderColor: '#042A9B'}}>Login</button>
-                            </div>
-                            <div class="col-md-6" style={{textAlign: 'right'}}>
-                            <a href="/signup" class="btn btn-primary" style={{width: '100px', fontSize: '15px', backgroundColor: '#042A9B', borderColor: '#042A9B', color: '#ffffff'}}>Signup</a>
-                            </div>
                         </div>
                     </div>
                 

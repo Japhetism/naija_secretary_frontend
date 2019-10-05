@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import LandingPageScreen from './screen';
+import ForgotPasswordDisplay from './display';
 
 function mapStateToProps() {
     return {
@@ -13,4 +13,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LandingPageScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(ForgotPasswordDisplay);
