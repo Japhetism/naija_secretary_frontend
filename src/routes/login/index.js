@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import LoginDisplay from './display';
+import LoginScreen from './screen';
 
 function mapStateToProps() {
     return {
@@ -13,4 +13,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginDisplay);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);

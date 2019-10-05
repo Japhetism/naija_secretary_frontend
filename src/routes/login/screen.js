@@ -1,6 +1,7 @@
 import React from 'react';
+import DetectScreen from '../../components/detect-screen';
 
-export default class LoginDisplay extends React.Component {
+export default class LoginScreen extends DetectScreen {
   render() {
     return (
       <React.Fragment>
@@ -8,7 +9,7 @@ export default class LoginDisplay extends React.Component {
           <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container box_1620">
-                <a class="navbar-brand logo_h" style={{color: '#ffffff', fontSize: '25px', fontWeight: 'bold'}} href="#">Income & Assets Declaration</a>
+                <a class="navbar-brand logo_h" style={{color: '#ffffff', fontSize: this.state.isDevicePC ? '25px' : '20px', fontWeight: 'bold'}} href="#">Income & Assets Declaration</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -43,7 +44,7 @@ export default class LoginDisplay extends React.Component {
                 <div class="hero-banner__img">
                     <form>
                         <div style={{borderRadius: '10px', backgroundColor: '#ffffff', paddingLeft: '20px', paddingRight: '20px', paddingBottom: '50px'}}> 
-                        <h2 style={{color: '#042A9B', textAlign: 'center', paddingTop: '10px'}}>Login</h2>
+                        <h2 style={{color: '#042A9B', textAlign: 'center', paddingTop: '30px'}}>Login</h2>
                         <div class="row row-field">
                            
                             <div class="col-md-12">
@@ -59,16 +60,14 @@ export default class LoginDisplay extends React.Component {
                         </div>
                         <div class="row row-field">
                           <div class="col-md-12">
-                            <a href="/forgot-password" style={{color: '#042A9B'}}>Forgot Password?</a>
+                            <button class="btn btn-primary form-control" style={{fontSize: '15px', backgroundColor: '#042A9B', borderColor: '#042A9B'}}>Login</button>
                           </div>
                         </div>
                         <div class="row row-field">
-                            <div class="col-md-6">
-                            <button class="btn btn-primary" style={{width: '100px', fontSize: '15px', backgroundColor: '#042A9B', borderColor: '#042A9B'}}>Login</button>
-                            </div>
-                            <div class="col-md-6" style={{textAlign: 'right'}}>
-                            <a href="/signup" class="btn btn-primary" style={{width: '100px', fontSize: '15px', backgroundColor: '#042A9B', borderColor: '#042A9B', color: '#ffffff'}}>Signup</a>
-                            </div>
+                          <div class="col-md-12">
+                            <a href="/forgot-password" style={{color: '#042A9B'}}>Forgot Password?</a>
+                            <a href="/signup" style={{color: '#042A9B', float: 'right'}}>Create an account</a>
+                          </div>
                         </div>
                     </div>
                 

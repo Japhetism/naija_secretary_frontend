@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LandingPageScreen from './routes/landing-page';
 import SignupDisplay from './routes/signup';
-import LoginDisplay from './routes/login';
+import LoginScreen from './routes/login';
 import ForgotPassword from './routes/forgot-password';
 
 class App extends React.Component {
@@ -13,7 +13,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={LandingPageScreen} />
           <Route exact path="/signup" component={SignupDisplay} />
-          <Route exact path="/login" component={LoginDisplay} />
+          <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
         </Switch>
       </Router>
