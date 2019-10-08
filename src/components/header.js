@@ -1,6 +1,7 @@
 import React from 'react';
+import DetectScreen from './detect-screen';
 
-export default class HeaderDisplay extends React.Component {
+export default class HeaderDisplay extends DetectScreen {
     render() {
         return (
             <React.Fragment>

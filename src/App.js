@@ -1,20 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
-import LandingPageScreen from './routes/landing-page';
-import SignupDisplay from './routes/signup';
-import LoginScreen from './routes/login';
-import ForgotPassword from './routes/forgot-password';
+import LandingScreen from './routes/landing'
+import HomeScreen from './routes/home'
 
 class App extends React.Component {
+  
   render() {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={LandingPageScreen} />
-          <Route exact path="/signup" component={SignupDisplay} />
-          <Route exact path="/login" component={LoginScreen} />
-          <Route exact path="/forgot-password" component={ForgotPassword} />
+          <Route path="/home" component={HomeScreen} />
+          <Route path="/" component={LandingScreen} />
         </Switch>
       </Router>
     );
